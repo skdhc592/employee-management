@@ -21,13 +21,17 @@ Employee Management Systemへの貢献に興味を持っていただき、あり
 # リポジトリをフォーク（GitHubのWebインターフェースから）
 # https://github.com/skdhc592/employee-management
 
-# フォークしたリポジトリをクローン
+# フォークしたリポジトリをクローン（YOUR_USERNAMEを自分のGitHubユーザー名に置き換える）
 git clone https://github.com/YOUR_USERNAME/employee-management.git
 cd employee-management
 
 # オリジナルリポジトリをupstreamとして追加
 git remote add upstream https://github.com/skdhc592/employee-management.git
 ```
+
+**注意**: `YOUR_USERNAME` は、あなた自身のGitHubユーザー名に置き換えてください。
+
+**Note**: Replace `YOUR_USERNAME` with your own GitHub username.
 
 ### 3. ブランチを作成
 
