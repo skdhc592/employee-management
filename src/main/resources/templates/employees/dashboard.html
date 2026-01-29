@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード - 社員管理システム</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #007bff;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .summary {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .summary h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .stat-card h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .stat-value {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .empty-message {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/employees" class="back-link">← 社員一覧に戻る</a>
+        
+        <h1>📊 ダッシュボード</h1>
+        
+        <!-- 全体サマリー -->
+        <div class="summary">
+            <h2>全社概要</h2>
+            <p>在籍中の社員数: <strong th:text="${totalEmployees}">0</strong> 名</p>
+        </div>
+        
+        <!-- 部署別統計 -->
+        <div th:if="${!departmentStats.isEmpty()}">
+            <h2 style="margin-bottom: 20px; color: #333;">部署別統計</h2>
+            
+            <div class="stats-grid">
+                <div th:each="stat : ${departmentStats}" class="stat-card">
+                    <h3 th:text="${stat.departmentName}">営業部</h3>
+                    
+                    <div class="stat-row">
+                        <span class="stat-label">社員数</span>
+                        <span class="stat-value" th:text="${stat.employeeCount} + '名'">3名</span>
+                    </div>
+                    
+                    <div class="stat-row" th:if="${stat.employeeCount > 0}">
+                        <span class="stat-label">平均給与</span>
+                        <span class="stat-value" th:text="${#numbers.formatDecimal(stat.averageSalary, 0, 'COMMA', 0, 'POINT')} + '円'">350,000円</span>
+                    </div>
+                    
+                    <div class="stat-row" th:if="${stat.employeeCount > 0}">
+                        <span class="stat-label">最高給与</span>
+                        <span class="stat-value" th:text="${#numbers.formatDecimal(stat.maxSalary, 0, 'COMMA', 0, 'POINT')} + '円'">400,000円</span>
+                    </div>
+                    
+                    <div class="stat-row" th:if="${stat.employeeCount > 0}">
+                        <span class="stat-label">最低給与</span>
+                        <span class="stat-value" th:text="${#numbers.formatDecimal(stat.minSalary, 0, 'COMMA', 0, 'POINT')} + '円'">300,000円</span>
+                    </div>
+                    
+                    <div class="stat-row" th:if="${stat.employeeCount == 0}">
+                        <span class="stat-label" style="color: #999;">社員なし</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- データなしメッセージ -->
+        <div th:if="${departmentStats.isEmpty()}" class="empty-message">
+            統計データがありません。
+        </div>
+    </div>
+</body>
+</html>
