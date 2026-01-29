@@ -5,6 +5,12 @@
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.10-brightgreen.svg)](https://spring.io/projects/spring-boot)
 
+**🔗 Repository**: https://github.com/skdhc592/employee-management
+
+**📖 Documentation**: https://skdhc592.github.io/employee-management/
+
+---
+
 Spring Boot で構築された社員管理システムです。社員情報の登録・編集・削除、検索、CSV出力、部署別統計などの機能を提供します。
 
 A comprehensive employee management system built with Spring Boot, featuring employee CRUD operations, search functionality, CSV export, and department statistics.
@@ -70,7 +76,7 @@ A comprehensive employee management system built with Spring Boot, featuring emp
 ### 1. リポジトリのクローン / Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/employee-management.git
+git clone https://github.com/skdhc592/employee-management.git
 cd employee-management
 ```
 
@@ -309,6 +315,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, please use GitHub Issues.
 
+**GitHub Issues**: https://github.com/skdhc592/employee-management/issues
+
+**Discussions**: https://github.com/skdhc592/employee-management/discussions
+
 ## 🙏 謝辞 / Acknowledgments
 
 - Spring Boot
@@ -317,8 +327,18 @@ For questions or suggestions, please use GitHub Issues.
 - H2 Database
 - Lombok
 
+## 🔗 関連リンク / Related Links
+
+- **GitHub Repository**: https://github.com/skdhc592/employee-management
+- **Documentation**: https://skdhc592.github.io/employee-management/
+- **Issues**: https://github.com/skdhc592/employee-management/issues
+- **Pull Requests**: https://github.com/skdhc592/employee-management/pulls
+- **Actions (CI/CD)**: https://github.com/skdhc592/employee-management/actions
+
 ---
 
 ⭐ このプロジェクトが役に立った場合は、ぜひスターをお願いします！
 
 If you find this project useful, please consider giving it a star! ⭐
+
+**Star this repository**: https://github.com/skdhc592/employee-management

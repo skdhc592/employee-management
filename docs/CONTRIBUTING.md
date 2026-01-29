@@ -1,5 +1,7 @@
 # 貢献ガイドライン / Contributing Guidelines
 
+**Repository**: https://github.com/skdhc592/employee-management
+
 Employee Management Systemへの貢献に興味を持っていただき、ありがとうございます！
 
 このドキュメントでは、プロジェクトへの貢献方法について説明します。
@@ -17,9 +19,14 @@ Employee Management Systemへの貢献に興味を持っていただき、あり
 
 ```bash
 # リポジトリをフォーク（GitHubのWebインターフェースから）
+# https://github.com/skdhc592/employee-management
+
 # フォークしたリポジトリをクローン
 git clone https://github.com/YOUR_USERNAME/employee-management.git
 cd employee-management
+
+# オリジナルリポジトリをupstreamとして追加
+git remote add upstream https://github.com/skdhc592/employee-management.git
 ```
 
 ### 3. ブランチを作成

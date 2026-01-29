@@ -1,5 +1,11 @@
 # スクリーンショット / Screenshots
 
+**Repository**: https://github.com/skdhc592/employee-management
+
+**Main README**: https://github.com/skdhc592/employee-management/blob/main/README.md
+
+---
+
 このディレクトリには、Employee Management Systemの画面キャプチャを配置します。
 
 ## 📸 必要なスクリーンショット

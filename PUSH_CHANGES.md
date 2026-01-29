@@ -1,5 +1,9 @@
 # 変更をGitHubにプッシュする手順
 
+**Repository**: https://github.com/skdhc592/employee-management
+
+---
+
 以下のコマンドをコマンドプロンプトまたはPowerShellで実行してください。
 
 ## 📝 追加されたファイル
