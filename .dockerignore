@@ -11,7 +11,7 @@ target/
 
 # Gradle
 .gradle/
-gradle/
+# gradle/ - REMOVED: needed for Docker build
 
 # IDE
 .idea/
@@ -29,9 +29,9 @@ Thumbs.db
 docs/
 
 # Docker
-Dockerfile
+# Dockerfile - REMOVED: needed for Render build
 docker-compose.yml
-.dockerignore
+# .dockerignore - REMOVED: needed for Render build
 
 # CI/CD
 .github/
