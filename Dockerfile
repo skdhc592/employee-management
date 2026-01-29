@@ -7,11 +7,14 @@ COPY build.gradle settings.gradle ./
 COPY gradle ./gradle
 COPY gradlew ./
 
-# Copy source code
-COPY src ./src
+    # Copy source code
+    COPY src ./src
 
-# Build application
-RUN ./gradlew build -x test --no-daemon
+    # Grant execute permission to gradlew
+    RUN chmod +x gradlew
+
+    # Build application
+    RUN ./gradlew build -x test --no-daemon
 
 # Run stage
 FROM eclipse-temurin:21-jre-alpine
