@@ -1,0 +1,46 @@
+# GitHub Pages Configuration
+
+# Theme
+theme: jekyll-theme-cayman
+title: Employee Management System
+description: Spring Boot製の包括的な社員管理システム | A comprehensive employee management system built with Spring Boot
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Settings
+show_downloads: true
+google_analytics: # アナリティクスIDを追加する場合はここに記載
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Documentation
+    url: /CONTRIBUTING
+  - title: GitHub
+    url: https://github.com/skdhc592/employee-management
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  screenshots:
+    output: true
+    permalink: /screenshots/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: ja

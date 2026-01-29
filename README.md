@@ -1,5 +1,10 @@
 # Employee Management System（社員管理システム）
 
+[![Java CI with Gradle](https://github.com/skdhc592/employee-management/actions/workflows/ci.yml/badge.svg)](https://github.com/skdhc592/employee-management/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.10-brightgreen.svg)](https://spring.io/projects/spring-boot)
+
 Spring Boot で構築された社員管理システムです。社員情報の登録・編集・削除、検索、CSV出力、部署別統計などの機能を提供します。
 
 A comprehensive employee management system built with Spring Boot, featuring employee CRUD operations, search functionality, CSV export, and department statistics.
@@ -148,21 +153,33 @@ employee-management/
 
 ## 📸 スクリーンショット / Screenshots
 
+アプリケーションを起動してスクリーンショットを撮影してください。詳細は [docs/screenshots/README.md](docs/screenshots/README.md) を参照してください。
+
+Please run the application and take screenshots. See [docs/screenshots/README.md](docs/screenshots/README.md) for details.
+
 ### 社員一覧画面 / Employee List
 社員の一覧表示、検索、フィルタリング機能を提供します。
 Displays employee list with search and filter capabilities.
+
+<!-- ![社員一覧](docs/screenshots/list.png) -->
 
 ### 社員詳細画面 / Employee Detail
 個別の社員情報を詳細に表示します。
 Shows detailed information for individual employees.
 
+<!-- ![社員詳細](docs/screenshots/detail.png) -->
+
 ### 社員登録・編集フォーム / Employee Form
 社員情報の登録・編集を行います。
 Form for creating and editing employee information.
 
+<!-- ![社員登録フォーム](docs/screenshots/form-new.png) -->
+
 ### ダッシュボード / Dashboard
 部署別の統計情報を表示します。
 Displays department-wise statistics.
+
+<!-- ![ダッシュボード](docs/screenshots/dashboard.png) -->
 
 ## 🎯 使用方法 / Usage
 
@@ -263,17 +280,28 @@ Main configuration can be found in `src/main/resources/application.properties`:
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
+詳細な貢献ガイドラインは [CONTRIBUTING.md](docs/CONTRIBUTING.md) をご覧ください。
+
+Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed contribution guidelines.
+
+### クイックスタート / Quick Start
+
 1. このリポジトリをフォーク / Fork the repository
 2. フィーチャーブランチを作成 / Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. 変更をコミット / Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. ブランチにプッシュ / Push to the branch (`git push origin feature/AmazingFeature`)
 5. プルリクエストを開く / Open a Pull Request
 
+### Issueテンプレート / Issue Templates
+
+- 🐛 [バグ報告 / Bug Report](.github/ISSUE_TEMPLATE/bug_report.md)
+- ✨ [機能要望 / Feature Request](.github/ISSUE_TEMPLATE/feature_request.md)
+
 ## 📄 ライセンス / License
 
-このプロジェクトはMITライセンスの下で公開されています。
+このプロジェクトはMITライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルをご覧ください。
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 📧 お問い合わせ / Contact
 

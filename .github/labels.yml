@@ -1,0 +1,87 @@
+# GitHub Issue Labels Configuration
+# このファイルは推奨ラベル設定です。GitHubのSettings > Labelsから手動で設定してください。
+
+labels:
+  # タイプ / Type
+  - name: "bug"
+    color: "d73a4a"
+    description: "バグ報告 / Something isn't working"
+  
+  - name: "enhancement"
+    color: "a2eeef"
+    description: "新機能・改善 / New feature or request"
+  
+  - name: "documentation"
+    color: "0075ca"
+    description: "ドキュメント / Improvements or additions to documentation"
+  
+  - name: "question"
+    color: "d876e3"
+    description: "質問 / Further information is requested"
+  
+  # 優先度 / Priority
+  - name: "priority: critical"
+    color: "b60205"
+    description: "最優先 / Critical priority"
+  
+  - name: "priority: high"
+    color: "d93f0b"
+    description: "高優先度 / High priority"
+  
+  - name: "priority: medium"
+    color: "fbca04"
+    description: "中優先度 / Medium priority"
+  
+  - name: "priority: low"
+    color: "0e8a16"
+    description: "低優先度 / Low priority"
+  
+  # ステータス / Status
+  - name: "good first issue"
+    color: "7057ff"
+    description: "初心者向け / Good for newcomers"
+  
+  - name: "help wanted"
+    color: "008672"
+    description: "ヘルプ募集 / Extra attention is needed"
+  
+  - name: "wontfix"
+    color: "ffffff"
+    description: "対応しない / This will not be worked on"
+  
+  - name: "duplicate"
+    color: "cfd3d7"
+    description: "重複 / This issue or pull request already exists"
+  
+  - name: "invalid"
+    color: "e4e669"
+    description: "無効 / This doesn't seem right"
+  
+  # カテゴリ / Category
+  - name: "frontend"
+    color: "c5def5"
+    description: "フロントエンド / Frontend related"
+  
+  - name: "backend"
+    color: "c2e0c6"
+    description: "バックエンド / Backend related"
+  
+  - name: "database"
+    color: "f9d0c4"
+    description: "データベース / Database related"
+  
+  - name: "security"
+    color: "ee0701"
+    description: "セキュリティ / Security related"
+  
+  - name: "performance"
+    color: "ff6b6b"
+    description: "パフォーマンス / Performance improvements"
+  
+  - name: "testing"
+    color: "bfd4f2"
+    description: "テスト / Testing related"
+  
+  - name: "dependencies"
+    color: "0366d6"
+    description: "依存関係 / Pull requests that update a dependency file"
