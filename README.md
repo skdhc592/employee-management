@@ -230,6 +230,21 @@ The built JAR file will be in the `build/libs/` directory.
 java -jar build/libs/employee-management-0.0.1-SNAPSHOT.jar
 ```
 
+## 🌐 デプロイ / Deployment
+
+本番環境へのデプロイ方法については、詳細なデプロイガイドをご覧ください。
+
+For production deployment, please see the comprehensive deployment guide.
+
+**📖 [デプロイガイド / Deployment Guide](docs/DEPLOYMENT.md)**
+
+### 対応プラットフォーム / Supported Platforms
+
+- ☁️ **Render** (推奨 / Recommended)
+- 🚂 **Railway** (簡単 / Easy)
+- 🎯 **Heroku** (クラシック / Classic)
+- 🐳 **Docker** (汎用 / Universal)
+
 ## 🧪 テスト / Testing
 
 ```bash
